@@ -57,7 +57,7 @@ namespace SchoolPractice
 
         public override string ToString()
         {
-            return Name + "Credits: " + NumberOfCredits + "GPA: " + Gpa;
+            return $"{Name}\nCredits: {NumberOfCredits}\nGPA: {Gpa}";
         }
 
         public void AddGrade(int courseCredits, double grade)
@@ -119,5 +119,7 @@ namespace SchoolPractice
         {
             return HashCode.Combine(studentId);
         }
+
+        
     }
 }
